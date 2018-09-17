@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment1-Form</title>
+</head>
+
+<body>
+    <h3>SOCIAL SECURITY ADMINISTRATION </h3>
+    <h4>Application for a Social Security Card</h4>
+    <form>
+        <div id="Name">
+            <fieldset>
+                <legend ><b>1.NAME</b></legend>
+                <label>TO BE SHOWN ON CARD</label> <br>
+                <label for="fname"> First:</label> <input type="text" name="fname" id="fname">
+                <label for="mname"> Full Middle Name:</label> <input type="text" name="mname" id="mname">
+                <label for="lname"> Last:</label> <input type="text" name="lname" id="lname"><br>
+               <label>FULL NAME AT BIRTH IF OTHER THAN ABOVE</label><br>
+                <label for="fname1"> First:</label> <input type="text" name="fname1" id="fname1">
+                <label for="mname1"> Full Middle Name:</label> <input type="text" name="mname1" id="mname1">
+                <label for="lname1"> Last:</label> <input type="text" name="lname1" id="lname1"><br>
+                <label>OTHER NAMES USED</label><br>
+                <label for="fname2"> First:</label> <input type="text"  name="fname2" id="fname2">
+                <label for="mname2"> Full Middle Name:</label> <input type="text" name="mname2" id="mname2">
+                <label for="lname2"> Last:</label> <input type="text" name="lname2" id="lname2"><br>
+
+            </fieldset>
+
+        </div>
+
+        <div id="ssnNum">
+<fieldset>
+    <legend>2.</legend>
+<label for="">Social Security number previously assigned to the person
+        listed in item 1</label>
+        <input type="tel" name="ssn" id="prevssn" pattern=" [0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-7890">
+</fieldset>
+</div>
+<div id="dob">
+<fieldset>
+<legend>3.PLACE OF BIRTH</legend>
+<label for="city"> City:</label> <input type="text"  name="city" id="city">
+                <label for="stateFC"> State or Foreign Country:</label> <input type="text" name="stateFC" id="stateFC">
+                <label for="fci"> FCI:</label> <input type="text" name="fci" id="fci" value="For office use"><br>
+
+</fieldset>
+        </div>
+<div id= "citizenship">
+    <fieldset>
+<legend>4.CITIZENSHIP  </legend>
+<label>
+        <input type="radio"   name="citizenship"  value="U.S. Citizen"/>U.S. Citizen</label>
+        <label>
+                <input type="radio"  value="Legal AlienAllowed To Work" name="citizenship" />Legal AlienAllowed ToWork
+                </label>
+                <label>
+                <input type="radio"  value="Legal Alien NOT Allowed To Work" name="citizenship" />Legal Alien NOT Allowed ToWork
+            </label>
+            <label>
+            <input type="radio"  value="Other" name="citizenship" />Other
+        </label>        
+    </fieldset>
+    <div>
+<fieldset>
+        <legend>5.ETHNICITY  </legend>
+        
+        <label >Are You Hispanic or Latino?</label><br>
+        <label>
+                <input type="radio"   name="ethnicity"  value="Yes"/>Yes</label>
+                        <label>
+                                <input type="radio"   name="ethnicity"  value="No"/>No</label>
+</fieldset>
+    </div>
+    <div id="race" >
+<fieldset>
+        <legend>7.RACE </legend>
+        <input type="checkbox" name="Native Hawaiian" value="Native Hawaiian" /> Native Hawaiian
+        <input type="checkbox" name="American Indian" value="American Indian" /> American Indian
+        <input type="checkbox" name="Alaska Native" value="Alaska Native" /> Alaska Native
+        <input type="checkbox" name="Asian" value="Asian" /> Asian
+        <input type="checkbox" name="Black/African American" value="Black/African American" /> Black/African American
+        <input type="checkbox" name="Other Pacific Islander" value="Other Pacific Islander" /> Other Pacific Islander
+        <input type="checkbox" name="White" value="White" /> White
+</fieldset>
+    </div>
+    
+        
+    <div id="sex">
+        <fieldset>
+                <legend>8.SEX </legend>
+            <label>
+                    <input type="radio"   name="sex"  value="Male"/>Male</label>
+                            <label>
+                                    <input type="radio"   name="sex"  value="Female"/>Female</label>
+
+                                </fieldset>
+    </div>
+<div>
+<fieldset>
+
+
+
+    
+</fieldset>
+
+
+
+
+
+</div>
+
+</div>        
+    </form>
+</body>
+
+</html>
