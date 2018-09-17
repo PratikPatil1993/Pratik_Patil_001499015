@@ -40,7 +40,7 @@
         <input type="tel" name="ssn" id="prevssn" pattern=" [0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-7890">
 </fieldset>
 </div>
-<div id="dob">
+<div id="placeOfBirth">
 <fieldset>
 <legend>3.PLACE OF BIRTH</legend>
 <label for="city"> City:</label> <input type="text"  name="city" id="city">
@@ -100,18 +100,153 @@
                                 </fieldset>
     </div>
 <div>
+    
 <fieldset>
-
+                <legend >9.<b></b></legend>
+                <label>A. PARENT/ MOTHER'S NAME AT HER BIRTH</label> <br>
+                <label for="mfname"> First:</label> <input type="text" name="mfname" id="mfname">
+                <label for="mmname"> Full Middle Name:</label> <input type="text" name="mmname" id="mmname">
+                <label for="mlname"> Last:</label> <input type="text" name="mlname" id="mlname"><br>
+                <label>B. PARENT/ MOTHER'S SOCIAL SECURITY NUMBER </label> <br>
+                <input type="tel"  pattern=" [0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-7890" name="mssnNum" id="mssnNum" >
 
 
     
 </fieldset>
+</div>
+<div>
+        <fieldset>
+                        <legend >10.<b></b></legend>
+                        <label>A. PARENT/ FATHER'S NAME</label> <br>
+                        <label for="ffname"> First:</label> <input type="text" name="ffname" id="ffname">
+                        <label for="fmname"> Full Middle Name:</label> <input type="text" name="fmname" id="fmname">
+                        <label for="flname"> Last:</label> <input type="text" name="flname" id="flname"><br>
+                        <label>B. PARENT/ FATHER'S SOCIAL SECURITY NUMBER </label> <br>
+                        <input type="tel"  pattern=" [0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-7890" name="fssnNUm" id="fssnNUm" >
+        
+        
+            
+        </fieldset>
+        </div>
+        
+<div >
+<fieldset>
+<legend> 11.</legend>
+<label> Has the person listed in item 1 or anyone acting on his/her behalf ever filed for or received a Social Security number
+        card before?</label>
+<input type="radio" name="yes11" id="Yes"><label >Yes (If "yes" answer questions 12-13)</label>
+<input type="radio" name="No11" id="No"><label>No</label>
+<input type="radio" name="don`tknow11" id="don`tknow11"> <label >Don't Know (If "don't know," skip to question 14.)</label>
+</fieldset>
+</div>
+<div id="12">
+<fieldset>
+    <legend>12.</legend>
+    <label > Name shown on the most recent Social
+            Security card issued for the person
+            listed in item 1</label><br>
+            <label for="fname12"> First:</label> <input type="text" name="fname12" id="fname12">
+            <label for="mname12"> Full Middle Name:</label> <input type="text" name="mname12" id="mname12">
+            <label for="lname12"> Last:</label> <input type="text" name="lname12" id="lname12"><br>
+        </fieldset>
+</div>
+<div>
+<fieldset>
+<label >Enter any different date of birth if used on an
+        earlier application for a card </label>
+<input type="date" id="otherDob" max="2018-9-19">
+</fieldset>
+</div>
+<div>
+<fieldset>
+    <label for="currentDate"><b>TODAY'S
+            DATE</b> </label>
+<input type="date" id="currentDate">
+</fieldset>
+</div>
 
+<div>
+        <fieldset>
+            <label for="phNum"><b>DAYTIME PHONE
+                    NUMBER </b></label>
+        <input type="tel" id="phNum" pattern= "[0-9]{3} [0-9]{3} [0-9]{4}"> 
+        </fieldset>
+        </div>
+        
+        <div>
+            <fieldset>
+                    <legend>16. MAILING ADDRESS</legend>
+<label for="streetAdd"> Street Address, Apt. No., PO Box, Rural Route No</label> <input type="text" id="streetAdd">
+<label for="cityadd">City</label><input type="text" id="cityadd">
+<label for="stateCountry">State/Foreign Country</label> <input type="text" id="stateCountry">
+<label for="zipadd">ZIP Code</label><input type="text" id="zipadd">
+<label for=""></label>
 
+            </fieldset>
+        </div>
 
+        <label><b>I declare under penalty of perjury that I have examined all the information on this form, and on any accompanying statements or forms,
+                and it is true and correct to the best to my knowledge.</b></label>
+<div>
+<fieldset>
+<label >YOUR SIGNATURE</label>
+<label>_______________</label>
+</fieldset>
+</div>
+<div>
+        <fieldset>
+        <label >YOUR RELATIONSHIP TO THE PERSON IN ITEM 1 IS:</label>
+    <input type="radio" name="Self" id="">Self
+    <input type="radio" name="Natural Or Adoptive Parent" id="">Natural Or Adoptive Parent
+    <input type="radio" name="Legal Guardian" id="">Legal Guardian
+    <input type="radio" name="Other" id="">Other
+    <label >Specify</label>____________________     
+        </fieldset>
+        </div>
+        <div id="lastBlock">
+            <fieldset>
+<span >
+    <label style="font-size: 12px; border-bottom: 1px solid #404040 " >DO NOT WRITE BELOW THIS LINE (FOR SSA USE ONLY)</label><br>
+    <div style="font-size: 12px; border-bottom: 1px solid #404040">
+    
+        <span style="font-size: 12px">
+                <label for="npn">NPN</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="npn">
+                <label for="doc">DOC</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="doc">
+                <label for="nti">NTI</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="nti">
+                <label for="can">CAN</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="can">
+                <label for="itv">ITV</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="itv">
+                <label for="unit">UNIT</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="unit"><br>
+</span>
+</div>
+<div style="font-size: 12px; border-bottom: 1px solid #404040">
+                <label for="pbc">PBC</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="pbc">
+<label for="evi">EVI</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="ev i">
+<label for="eva">EVA</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="ev">
+<label for="evc">EVC</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="evc">
+<label for="pra">PRA</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="pra">
+<label for="nwr">NWR</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="nwr">
+<label for="dnr">DNR</label><input type="text" style="border-color: transparent ; " id="dnr"><br>
+</div>
+<div style="font-size: 12px; border-bottom: 1px solid #404040">
+<label for="signTitle">SIGNATURE AND TITLE OF EMPLOYEE(S) REVIEWING EVIDENCE AND/OR CONDUCTING INTERVIEW</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="signTitle">
 
+<label for="signDate">DATE</label><input type="date" id="signDate" placeholder="Date" style="border-color: transparent">
+</div>
+<div style="font-size: 12px; border-bottom: 1px solid #404040">
+<label for="evidencesubmitted">EVIDENCE SUBMITTED</label><br> 
+     <textarea name="evidencesubmitted" id="evidencesubmitted" cols="70" rows="5"></textarea>
+     <label for="dcl">DCL</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="dcl">
+     <label for="date1">DATE</label><input type="date" style="border-color: transparent ; border-right: 1px solid #333;" id="date1"><br>
+     
 
 </div>
+
+</span>
+
+
+</fieldset>
+</div >
+
 
 </div>        
     </form>
