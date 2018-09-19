@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Assignment1-Form</title>
+    <link rel="stylesheet" type="text/css" href="StyleAssignment1.css">
 </head>
 
 <body>
@@ -205,43 +206,50 @@
         </div>
         <div id="lastBlock">
             <fieldset>
-<span >
-    <label style="font-size: 12px; border-bottom: 1px solid #404040 " >DO NOT WRITE BELOW THIS LINE (FOR SSA USE ONLY)</label><br>
-    <div style="font-size: 12px; border-bottom: 1px solid #404040">
-    
-        <span style="font-size: 12px">
-                <label for="npn">NPN</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="npn">
-                <label for="doc">DOC</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="doc">
-                <label for="nti">NTI</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="nti">
-                <label for="can">CAN</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="can">
-                <label for="itv">ITV</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="itv">
-                <label for="unit">UNIT</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="unit"><br>
-</span>
-</div>
-<div style="font-size: 12px; border-bottom: 1px solid #404040">
-                <label for="pbc">PBC</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="pbc">
-<label for="evi">EVI</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="ev i">
-<label for="eva">EVA</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="ev">
-<label for="evc">EVC</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="evc">
-<label for="pra">PRA</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="pra">
-<label for="nwr">NWR</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="nwr">
-<label for="dnr">DNR</label><input type="text" style="border-color: transparent ; " id="dnr"><br>
-</div>
-<div style="font-size: 12px; border-bottom: 1px solid #404040">
-<label for="signTitle">SIGNATURE AND TITLE OF EMPLOYEE(S) REVIEWING EVIDENCE AND/OR CONDUCTING INTERVIEW</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="signTitle">
+<table style="width: 100%; border: solid black">
+<tr aria-colspan="7"><label style="font-size: 12px; " >DO NOT WRITE BELOW THIS LINE (FOR SSA USE ONLY)</label><br></tr>
+    <tr style="border: 1px solid black">
+<td colspan="2" style="border: 1px solid black"><label for="npn">NPN</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="npn"></td>
+<td style="border: 1px solid black"><label for="doc">DOC</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="doc"></td>
+<td style="border: 1px solid black">            <label for="nti">NTI</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="nti"></td>
+<td colspan="2" >  <label for="can">CAN</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="can"></td>
+<td>            <label for="itv">ITV</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="itv"></td>
 
-<label for="signDate">DATE</label><input type="date" id="signDate" placeholder="Date" style="border-color: transparent">
-</div>
-<div style="font-size: 12px; border-bottom: 1px solid #404040">
-<label for="evidencesubmitted">EVIDENCE SUBMITTED</label><br> 
-     <textarea name="evidencesubmitted" id="evidencesubmitted" cols="70" rows="5"></textarea>
-     <label for="dcl">DCL</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="dcl">
-     <label for="date1">DATE</label><input type="date" style="border-color: transparent ; border-right: 1px solid #333;" id="date1"><br>
-     
+</tr>
 
-</div>
+<tr>
+<td>                <label for="pbc">PBC</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="pbc"></td>
+<td><label for="evi">EVI</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="ev i"></td>
+<td><label for="eva">EVA</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="ev"></td>
+<td><label for="evc">EVC</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="evc"></td>
+<td><label for="pra">PRA</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="pra"></td>
+<td><label for="nwr">NWR</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="nwr"></td>
+<td><label for="dnr">DNR</label><input type="text" id="dnr"><br></td>
+<td>            <label for="unit">UNIT</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="unit"><br></td>
+</tr>
+<tr >
+    <td rowspan="3" colspan="4"><textarea name="evidencesubmitted" id="evidencesubmitted" cols="70" rows="5" placeholder="EVIDENCE SUBMITTED"></textarea>
+    </td>
+<td colspan="4"> <label for="signTitle">SIGNATURE AND TITLE OF EMPLOYEE(S) REVIEWING EVIDENCE AND/OR CONDUCTING INTERVIEW</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="signTitle"> </td>
 
-</span>
+</tr>
+<tr>
+    <td colspan="4"><label for="signDate">DATE</label><input type="date" id="signDate" placeholder="Date" > </td>
+</tr>
+<tr>
+    <td colspan="2"><label for="dcl">DCL</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="dcl"></td>
+    <td colspan="2"><label for="date1">DATE</label><input type="date" style="border-color: transparent ; border-right: 1px solid #333;" id="date1"><br></td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
 
 
 </fieldset>
