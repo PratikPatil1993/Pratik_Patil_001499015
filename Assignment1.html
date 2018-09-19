@@ -7,25 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Assignment1-Form</title>
     <link rel="stylesheet" type="text/css" href="StyleAssignment1.css">
+    
 </head>
 
 <body>
     <h3>SOCIAL SECURITY ADMINISTRATION </h3>
     <h4>Application for a Social Security Card</h4>
-    <form>
+    <form class="ssnForm">
         <div id="Name">
             <fieldset>
-                <legend ><b>1.NAME</b></legend>
+                <legend>1.</legend>
+                <label >NAME</label><br>
                 <label>TO BE SHOWN ON CARD</label> <br>
                 <label for="fname"> First:</label> <input type="text" name="fname" id="fname">
                 <label for="mname"> Full Middle Name:</label> <input type="text" name="mname" id="mname">
                 <label for="lname"> Last:</label> <input type="text" name="lname" id="lname"><br>
-               <label>FULL NAME AT BIRTH IF OTHER THAN ABOVE</label><br>
+                <label>FULL NAME AT BIRTH IF OTHER THAN ABOVE</label><br>
                 <label for="fname1"> First:</label> <input type="text" name="fname1" id="fname1">
                 <label for="mname1"> Full Middle Name:</label> <input type="text" name="mname1" id="mname1">
                 <label for="lname1"> Last:</label> <input type="text" name="lname1" id="lname1"><br>
                 <label>OTHER NAMES USED</label><br>
-                <label for="fname2"> First:</label> <input type="text"  name="fname2" id="fname2">
+                <label for="fname2"> First:</label> <input type="text" name="fname2" id="fname2">
                 <label for="mname2"> Full Middle Name:</label> <input type="text" name="mname2" id="mname2">
                 <label for="lname2"> Last:</label> <input type="text" name="lname2" id="lname2"><br>
 
@@ -34,229 +36,270 @@
         </div>
 
         <div id="ssnNum">
-<fieldset>
-    <legend>2.</legend>
-<label for="">Social Security number previously assigned to the person
-        listed in item 1</label>
-        <input type="tel" name="ssn" id="prevssn" pattern=" [0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-7890">
-</fieldset>
-</div>
-<div id="placeOfBirth">
-<fieldset>
-<legend>3.PLACE OF BIRTH</legend>
-<label for="city"> City:</label> <input type="text"  name="city" id="city">
+            <fieldset>
+                <legend>2.</legend>
+                <label for="">Social Security number previously assigned to the person
+                    listed in item 1</label>
+                <input type="tel" name="ssn" id="prevssn" pattern=" [0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-7890">
+            </fieldset>
+        </div>
+        <div id="placeOfBirth" style="width: 70%;  float: left;" >
+            <fieldset >
+                <legend>3.</legend>
+                <label >PLACE OF BIRTH</label><br>
+                <label for="city"> City:</label> <input type="text" name="city" id="city">
                 <label for="stateFC"> State or Foreign Country:</label> <input type="text" name="stateFC" id="stateFC">
                 <label for="fci"> FCI:</label> <input type="text" name="fci" id="fci" value="For office use"><br>
 
-</fieldset>
-        </div>
-<div id= "citizenship">
-    <fieldset>
-<legend>4.CITIZENSHIP  </legend>
-<label>
-        <input type="radio"   name="citizenship"  value="U.S. Citizen"/>U.S. Citizen</label>
-        <label>
-                <input type="radio"  value="Legal AlienAllowed To Work" name="citizenship" />Legal AlienAllowed ToWork
-                </label>
-                <label>
-                <input type="radio"  value="Legal Alien NOT Allowed To Work" name="citizenship" />Legal Alien NOT Allowed ToWork
-            </label>
-            <label>
-            <input type="radio"  value="Other" name="citizenship" />Other
-        </label>        
-    </fieldset>
-    <div>
-<fieldset>
-        <legend>5.ETHNICITY  </legend>
-        
-        <label >Are You Hispanic or Latino?</label><br>
-        <label>
-                <input type="radio"   name="ethnicity"  value="Yes"/>Yes</label>
-                        <label>
-                                <input type="radio"   name="ethnicity"  value="No"/>No</label>
-</fieldset>
-    </div>
-    <div id="race" >
-<fieldset>
-        <legend>7.RACE </legend>
-        <input type="checkbox" name="Native Hawaiian" value="Native Hawaiian" /> Native Hawaiian
-        <input type="checkbox" name="American Indian" value="American Indian" /> American Indian
-        <input type="checkbox" name="Alaska Native" value="Alaska Native" /> Alaska Native
-        <input type="checkbox" name="Asian" value="Asian" /> Asian
-        <input type="checkbox" name="Black/African American" value="Black/African American" /> Black/African American
-        <input type="checkbox" name="Other Pacific Islander" value="Other Pacific Islander" /> Other Pacific Islander
-        <input type="checkbox" name="White" value="White" /> White
-</fieldset>
-    </div>
-    
-        
-    <div id="sex">
-        <fieldset>
-                <legend>8.SEX </legend>
-            <label>
-                    <input type="radio"   name="sex"  value="Male"/>Male</label>
-                            <label>
-                                    <input type="radio"   name="sex"  value="Female"/>Female</label>
-
-                                </fieldset>
-    </div>
-<div>
-    
-<fieldset>
-                <legend >9.<b></b></legend>
-                <label>A. PARENT/ MOTHER'S NAME AT HER BIRTH</label> <br>
-                <label for="mfname"> First:</label> <input type="text" name="mfname" id="mfname">
-                <label for="mmname"> Full Middle Name:</label> <input type="text" name="mmname" id="mmname">
-                <label for="mlname"> Last:</label> <input type="text" name="mlname" id="mlname"><br>
-                <label>B. PARENT/ MOTHER'S SOCIAL SECURITY NUMBER </label> <br>
-                <input type="tel"  pattern=" [0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-7890" name="mssnNum" id="mssnNum" >
-
-
-    
-</fieldset>
-</div>
-<div>
-        <fieldset>
-                        <legend >10.<b></b></legend>
-                        <label>A. PARENT/ FATHER'S NAME</label> <br>
-                        <label for="ffname"> First:</label> <input type="text" name="ffname" id="ffname">
-                        <label for="fmname"> Full Middle Name:</label> <input type="text" name="fmname" id="fmname">
-                        <label for="flname"> Last:</label> <input type="text" name="flname" id="flname"><br>
-                        <label>B. PARENT/ FATHER'S SOCIAL SECURITY NUMBER </label> <br>
-                        <input type="tel"  pattern=" [0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-7890" name="fssnNUm" id="fssnNUm" >
-        
-        
-            
-        </fieldset>
-        </div>
-        
-<div >
-<fieldset>
-<legend> 11.</legend>
-<label> Has the person listed in item 1 or anyone acting on his/her behalf ever filed for or received a Social Security number
-        card before?</label>
-<input type="radio" name="yes11" id="Yes"><label >Yes (If "yes" answer questions 12-13)</label>
-<input type="radio" name="No11" id="No"><label>No</label>
-<input type="radio" name="don`tknow11" id="don`tknow11"> <label >Don't Know (If "don't know," skip to question 14.)</label>
-</fieldset>
-</div>
-<div id="12">
-<fieldset>
-    <legend>12.</legend>
-    <label > Name shown on the most recent Social
-            Security card issued for the person
-            listed in item 1</label><br>
-            <label for="fname12"> First:</label> <input type="text" name="fname12" id="fname12">
-            <label for="mname12"> Full Middle Name:</label> <input type="text" name="mname12" id="mname12">
-            <label for="lname12"> Last:</label> <input type="text" name="lname12" id="lname12"><br>
-        </fieldset>
-</div>
-<div>
-<fieldset>
-<label >Enter any different date of birth if used on an
-        earlier application for a card </label>
-<input type="date" id="otherDob" max="2018-9-19">
-</fieldset>
-</div>
-<div>
-<fieldset>
-    <label for="currentDate"><b>TODAY'S
-            DATE</b> </label>
-<input type="date" id="currentDate">
-</fieldset>
-</div>
-
-<div>
-        <fieldset>
-            <label for="phNum"><b>DAYTIME PHONE
-                    NUMBER </b></label>
-        <input type="tel" id="phNum" pattern= "[0-9]{3} [0-9]{3} [0-9]{4}"> 
-        </fieldset>
-        </div>
-        
-        <div>
-            <fieldset>
-                    <legend>16. MAILING ADDRESS</legend>
-<label for="streetAdd"> Street Address, Apt. No., PO Box, Rural Route No</label> <input type="text" id="streetAdd">
-<label for="cityadd">City</label><input type="text" id="cityadd">
-<label for="stateCountry">State/Foreign Country</label> <input type="text" id="stateCountry">
-<label for="zipadd">ZIP Code</label><input type="text" id="zipadd">
-<label for=""></label>
-
             </fieldset>
         </div>
-
-        <label><b>I declare under penalty of perjury that I have examined all the information on this form, and on any accompanying statements or forms,
-                and it is true and correct to the best to my knowledge.</b></label>
-<div>
-<fieldset>
-<label >YOUR SIGNATURE</label>
-<label>_______________</label>
-</fieldset>
-</div>
-<div>
-        <fieldset>
-        <label >YOUR RELATIONSHIP TO THE PERSON IN ITEM 1 IS:</label>
-    <input type="radio" name="Self" id="">Self
-    <input type="radio" name="Natural Or Adoptive Parent" id="">Natural Or Adoptive Parent
-    <input type="radio" name="Legal Guardian" id="">Legal Guardian
-    <input type="radio" name="Other" id="">Other
-    <label >Specify</label>____________________     
-        </fieldset>
-        </div>
-        <div id="lastBlock">
+        <div id="dob" >
             <fieldset>
-<table style="width: 100%; border: solid black">
-<tr aria-colspan="7"><label style="font-size: 12px; " >DO NOT WRITE BELOW THIS LINE (FOR SSA USE ONLY)</label><br></tr>
-    <tr style="border: 1px solid black">
-<td colspan="2" style="border: 1px solid black"><label for="npn">NPN</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="npn"></td>
-<td style="border: 1px solid black"><label for="doc">DOC</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="doc"></td>
-<td style="border: 1px solid black">            <label for="nti">NTI</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="nti"></td>
-<td colspan="2" >  <label for="can">CAN</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="can"></td>
-<td>            <label for="itv">ITV</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="itv"></td>
-
-</tr>
-
-<tr>
-<td>                <label for="pbc">PBC</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="pbc"></td>
-<td><label for="evi">EVI</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="ev i"></td>
-<td><label for="eva">EVA</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="ev"></td>
-<td><label for="evc">EVC</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="evc"></td>
-<td><label for="pra">PRA</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="pra"></td>
-<td><label for="nwr">NWR</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="nwr"></td>
-<td><label for="dnr">DNR</label><input type="text" id="dnr"><br></td>
-<td>            <label for="unit">UNIT</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="unit"><br></td>
-</tr>
-<tr >
-    <td rowspan="3" colspan="4"><textarea name="evidencesubmitted" id="evidencesubmitted" cols="70" rows="5" placeholder="EVIDENCE SUBMITTED"></textarea>
-    </td>
-<td colspan="4"> <label for="signTitle">SIGNATURE AND TITLE OF EMPLOYEE(S) REVIEWING EVIDENCE AND/OR CONDUCTING INTERVIEW</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="signTitle"> </td>
-
-</tr>
-<tr>
-    <td colspan="4"><label for="signDate">DATE</label><input type="date" id="signDate" placeholder="Date" > </td>
-</tr>
-<tr>
-    <td colspan="2"><label for="dcl">DCL</label><input type="text" style="border-color: transparent ; border-right: 1px solid #333;" id="dcl"></td>
-    <td colspan="2"><label for="date1">DATE</label><input type="date" style="border-color: transparent ; border-right: 1px solid #333;" id="date1"><br></td>
-</tr>
-</table>
+                <legend>4.</legend>
+                <label for="">DATE OF BIRTH </label> <br>
+                    <input type="date" id="dob1"> 
+                    
+            </fieldset>
 
 
+        </div>
+        <div id="citizenship">
+            <fieldset>
+
+                <legend>5.</legend>
+                <label >CITIZENSHIP</label><br>
+                <label>
+                    <input type="radio" name="citizenship" value="U.S. Citizen" />U.S. Citizen</label>
+                <label>
+                    <input type="radio" value="Legal AlienAllowed To Work" name="citizenship" />Legal AlienAllowed
+                    ToWork
+                </label>
+                <label>
+                    <input type="radio" value="Legal Alien NOT Allowed To Work" name="citizenship" />Legal Alien NOT
+                    Allowed ToWork
+                </label>
+                <label>
+                    <input type="radio" value="Other" name="citizenship" />Other
+                </label>
+            </fieldset>
+            <div>
+                <fieldset>
+                    <legend>6.</legend>
+<label >ETHNICITY</label><br>
+                    <label>Are You Hispanic or Latino?</label><br>
+                    <label>
+                        <input type="radio" name="ethnicity" value="Yes" />Yes</label>
+                    <label>
+                        <input type="radio" name="ethnicity" value="No" />No</label>
+                </fieldset>
+            </div>
+            <div id="race">
+                <fieldset>
+                    <legend>7. </legend>
+                    <label>RACE</label>
+                    <input type="checkbox" name="Native Hawaiian" value="Native Hawaiian" /> Native Hawaiian
+                    <input type="checkbox" name="American Indian" value="American Indian" /> American Indian
+                    <input type="checkbox" name="Alaska Native" value="Alaska Native" /> Alaska Native
+                    <input type="checkbox" name="Asian" value="Asian" /> Asian
+                    <input type="checkbox" name="Black/African American" value="Black/African American" />
+                    Black/African American
+                    <input type="checkbox" name="Other Pacific Islander" value="Other Pacific Islander" /> Other
+                    Pacific Islander
+                    <input type="checkbox" name="White" value="White" /> White
+                </fieldset>
+            </div>
+
+
+            <div id="sex">
+                <fieldset>
+                    <legend>8.</legend>
+                    <label>SEX</label>
+                    <label>
+                        <input type="radio" name="sex" value="Male" />Male</label>
+                    <label>
+                        <input type="radio" name="sex" value="Female" />Female</label>
+
+                </fieldset>
+            </div>
+            <div>
+
+                <fieldset>
+                    <legend>9.<b></b></legend>
+                    <label>A. PARENT/ MOTHER'S NAME AT HER BIRTH</label> <br>
+                    <label for="mfname"> First:</label> <input type="text" name="mfname" id="mfname">
+                    <label for="mmname"> Full Middle Name:</label> <input type="text" name="mmname" id="mmname">
+                    <label for="mlname"> Last:</label> <input type="text" name="mlname" id="mlname"><br>
+                    <label>B. PARENT/ MOTHER'S SOCIAL SECURITY NUMBER </label> <br>
+                    <input type="tel" pattern=" [0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-7890" name="mssnNum"
+                        id="mssnNum">
 
 
 
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>10.<b></b></legend>
+                    <label>A. PARENT/ FATHER'S NAME</label> <br>
+                    <label for="ffname"> First:</label> <input type="text" name="ffname" id="ffname">
+                    <label for="fmname"> Full Middle Name:</label> <input type="text" name="fmname" id="fmname">
+                    <label for="flname"> Last:</label> <input type="text" name="flname" id="flname"><br>
+                    <label>B. PARENT/ FATHER'S SOCIAL SECURITY NUMBER </label> <br>
+                    <input type="tel" pattern=" [0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-7890" name="fssnNUm"
+                        id="fssnNUm">
 
 
 
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend> 11.</legend>
+                    <label> Has the person listed in item 1 or anyone acting on his/her behalf ever filed for or
+                        received a Social Security number
+                        card before?</label>
+                    <input type="radio" name="yes11" id="Yes"><label>Yes (If "yes" answer questions 12-13)</label>
+                    <input type="radio" name="No11" id="No"><label>No</label>
+                    <input type="radio" name="don`tknow11" id="don`tknow11"> <label>Don't Know (If "don't know," skip
+                        to question 14.)</label>
+                </fieldset>
+            </div>
+            <div id="12">
+                <fieldset>
+                    <legend>12.</legend>
+                    <label> Name shown on the most recent Social
+                        Security card issued for the person
+                        listed in item 1</label><br>
+                    <label for="fname12"> First:</label> <input type="text" name="fname12" id="fname12">
+                    <label for="mname12"> Full Middle Name:</label> <input type="text" name="mname12" id="mname12">
+                    <label for="lname12"> Last:</label> <input type="text" name="lname12" id="lname12"><br>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>13.</legend>
+                    <label>Enter any different date of birth if used on an
+                        earlier application for a card </label>
+                    <input type="date" id="otherDob" max="2018-9-19">
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>14.</legend>
+                    <label for="currentDate">TODAY'S
+                            DATE </label>
+                    <input type="date" id="currentDate">
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>15.</legend>
+                    <label for="phNum">DAYTIME PHONE
+                            NUMBER </label>
+                    <input type="tel" id="phNum" pattern="[0-9]{3} [0-9]{3} [0-9]{4}">
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>16.</legend>
+                    <label> MAILING ADDRESS</label> <label style="font-size: 12px">(Do Not Abbreviate)</label> <br>
+                    <label for="streetAdd"> Street Address, Apt. No., PO Box, Rural Route No</label> <input type="text"
+                        id="streetAdd">
+                    <label for="cityadd">City</label><input type="text" id="cityadd">
+                    <label for="stateCountry">State/Foreign Country</label> <input type="text" id="stateCountry">
+                    <label for="zipadd">ZIP Code</label><input type="text" id="zipadd">
+                    <label for=""></label>
+
+                </fieldset>
+            </div>
+
+            <label><b>I declare under penalty of perjury that I have examined all the information on this form, and on
+                    any accompanying statements or forms,
+                    and it is true and correct to the best to my knowledge.</b></label>
+            <div style=" width: 25%; float: left;">
+                <fieldset>
+                    <legend>17</legend>
+                    <label>YOUR SIGNATURE</label>
+                   <input type="text">
+                </fieldset>
+            </div>
+            <div style="width: 75%; float: right;">
+                <fieldset>
+                    <legend>18</legend>
+                    <label>YOUR RELATIONSHIP TO THE PERSON IN ITEM 1 IS:</label>
+                    <input type="radio" name="Self" id="">Self
+                    <input type="radio" name="Natural Or Adoptive Parent" id="">Natural Or Adoptive Parent
+                    <input type="radio" name="Legal Guardian" id="">Legal Guardian
+                    <input type="radio" name="Other" id="">Other
+                    <label>Specify</label>
+                    <input type="text">
+                </fieldset>
+            </div>
+            <div id="lastBlock">
+                
+                    <table style="border: solid black">
+                        <tr aria-colspan="7"><label style="font-size: 12px; ">DO NOT WRITE BELOW THIS LINE (FOR SSA USE
+                                ONLY)</label><br></tr>
+                        <tr style="border: 1px solid black">
+                            <td colspan="2" style="border: 1px solid black"><label for="npn">NPN</label><input type="text"
+                                     id="npn"></td>
+                            <td style="border: 1px solid black"><label for="doc">DOC</label><input type="text" 
+                                    id="doc"></td>
+                            <td style="border: 1px solid black"> <label for="nti">NTI</label><input type="text" 
+                                    id="nti"></td>
+                            <td colspan="2">    <label for="can">CAN</label><input type="text" 
+                                    id="can"></td>
+                            <td colspan="2"> <label for="itv">ITV</label><input type="text" 
+                                    id="itv"></td>
+
+                        </tr>
+
+                        <tr>
+                            <td> <label for="pbc">PBC</label><input type="text" 
+                                    id="pbc"></td>
+                            <td><label for="evi">EVI</label><input type="text" 
+                                    id="ev i"></td>
+                            <td><label for="eva">EVA</label><input type="text" 
+                                    id="ev"></td>
+                            <td><label for="evc">EVC</label><input type="text" 
+                                    id="evc"></td>
+                            <td><label for="pra">PRA</label><input type="text" 
+                                    id="pra"></td>
+                            <td><label for="nwr">NWR</label><input type="text" 
+                                    id="nwr"></td>
+                            <td><label for="dnr">DNR</label><input type="text" id="dnr"><br></td>
+                            <td> <label for="unit">UNIT</label><input type="text" 
+                                    id="unit"><br></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" colspan="4">
+                                <textarea name="evidencesubmitted" id="evidencesubmitted" cols="105"
+                                    rows="6" placeholder="EVIDENCE SUBMITTED"></textarea>
+                            </td>
+                            <td colspan="4"> 
+                                <label for="signTitle">SIGNATURE AND TITLE OF EMPLOYEE(S) REVIEWING
+                                    EVIDENCE AND/OR CONDUCTING INTERVIEW</label><input type="text"
+                                    id="signTitle"> </td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="4"><label for="signDate">DATE</label><input type="date" id="signDate"
+                                    placeholder="Date"> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><label for="dcl">DCL</label><input type="text" 
+                                    id="dcl"></td>
+                            <td colspan="2"><label for="date1">DATE</label><input type="date"
+                                    id="date1"><br></td>
+                        </tr>
+                    </table>
+            </div>
 
 
-
-</fieldset>
-</div >
-
-
-</div>        
+        </div>
     </form>
 </body>
 
